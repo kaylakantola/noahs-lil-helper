@@ -153,8 +153,8 @@ function FileDisplay({files}) {
                 var file = new File([data], name, {type: "text/plain;charset=utf-8"});
                 return (
                     <div key={name}>
-                    <div >{`${oldName} ... ${name}`}</div>
-                        <button onClick={()=>saveAs(file)}>Save file</button>
+                    <div >{`${oldName} has been transformed into ${name}`}</div>
+                        <button onClick={()=>saveAs(file)}>Save your cool new file</button>
                     </div>
                 )
             })}
